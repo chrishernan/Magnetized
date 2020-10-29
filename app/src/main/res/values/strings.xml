@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MAGNETIZED</string>
+
+    <string name="is_watch_mag">Is My Watch Magnetized?</string>
+    <string name="btn_go_text">GO</string>
+
+</resources>
