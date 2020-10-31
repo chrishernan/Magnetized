@@ -11,8 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/app_name"
-        android:textSize="@dimen/tv_app_name"
+        android:textAlignment="center"
+        android:text="@string/watch_is_magnetized"
+        android:visibility="invisible"
+        android:textSize="@dimen/tv_youre_watch_is_magnetized"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,10 +35,32 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <TextView
+        android:id="@+id/textView_is_phone_face_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE IS NOT FLAT"
+        app:layout_constraintBottom_toTopOf="@+id/textView_instructions1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_reading"
+        app:layout_constraintVertical_bias="0.089999974" />
+
+    <Button
+        android:id="@+id/button_check_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK AGAIN"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView_instructions1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_is_phone_face_up" />
+
+    <TextView
         android:id="@+id/textView_instructions1"
-        android:layout_width="176dp"
-        android:layout_height="18dp"
-        android:text="Hover Over Designated area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Please place phone flat and face up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,9 +68,9 @@
 
     <TextView
         android:id="@+id/textView_instructions2"
-        android:layout_width="176dp"
-        android:layout_height="18dp"
-        android:text="Scan Slowly Over Designated rea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Wait to scan until you see readings"
         app:layout_constraintBottom_toTopOf="@id/textView_instructions3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,24 +78,22 @@
 
     <TextView
         android:id="@+id/textView_instructions3"
-        android:layout_width="176dp"
-        android:layout_height="18dp"
-        android:text="Hover Over Designated area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Slowly scan watch over blue area"
         app:layout_constraintBottom_toTopOf="@id/textView_instructions4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_instructions2" />
 
-
     <TextView
         android:id="@+id/textView_instructions4"
-        android:layout_width="176dp"
-        android:layout_height="18dp"
-        android:text="Hover Over Designated area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Wait for your reading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_instructions3" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

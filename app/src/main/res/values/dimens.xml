@@ -3,6 +3,8 @@
 
     <dimen name="tv_is_mag">20sp</dimen>
     <dimen name="tv_app_name">40sp</dimen>
+    <dimen name="tv_youre_watch_is_magnetized">40sp</dimen>
+
 
     <dimen name="btn_mag">34sp</dimen>
 
